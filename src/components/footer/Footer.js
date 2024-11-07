@@ -1,4 +1,5 @@
 import Logo from "../../assets/logo.png"
+import "./Footer.css"
 
 const Footer = () => {
     return (
@@ -10,7 +11,7 @@ const Footer = () => {
                     <img src={Logo} alt="Little Lemon restaurant logo"/>
                 </div>
 
-                <section className="footer-nav">
+                <section className="footer-links">
                     <h2>Navigation</h2>
                     <nav aria-label="Main navigation">
                         <ul>
@@ -24,18 +25,16 @@ const Footer = () => {
                     </nav>
                 </section>
 
-                <section className="footer-contact">
+                <section className="footer-links">
                     <h2>Contact</h2>
-                    <address>
-                        <ul>
-                            <li><a href="#">Address</a></li>
-                            <li><a href="tel:#">Phone Number</a></li>
-                            <li><a href="mailto:#">Email</a></li>
-                        </ul>
-                    </address>
+                    <ul>
+                        <li><a href="#">Address</a></li>
+                        <li><a href="tel:#">Phone Number</a></li>
+                        <li><a href="mailto:#">Email</a></li>
+                    </ul>
                 </section>
 
-                <section className="footer-social">
+                <section className="footer-links">
                     <h2>Socials</h2>
                     <nav aria-label="Social media links">
                         <ul>

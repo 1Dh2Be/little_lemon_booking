@@ -1,0 +1,34 @@
+.site-footer {
+  background-color: #333333;
+}
+
+.footer-content {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 6rem;
+}
+
+.footer-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.footer-links {
+  margin: 2rem 0;
+}
+.footer-links h2 {
+  color: #495E57;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=Footer.css.map */

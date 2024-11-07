@@ -1,0 +1,35 @@
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+
+    .text-content {
+        h1 {
+            padding: 1rem 0;
+        }
+
+        p {
+            max-width: 375px;
+            min-height: 253px;
+            font-weight: 500;
+        }
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+
+    .img2 {
+        position: relative;
+        top: -130px;
+        left: -40px;
+        max-width: 200px;
+    }
+}

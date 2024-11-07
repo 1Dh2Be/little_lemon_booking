@@ -1,0 +1,54 @@
+.special-card {
+
+    max-width: 313px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
+
+    img {
+        max-width: 313px;
+        height: 209px;
+        border: 1px solid #e0e0e0;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+.special-header {
+    display: flex;
+    justify-content: space-between;
+
+    .price {
+        position: relative;
+        top: 10px;
+        padding: 1rem;
+        font-size: 20px;
+        font-weight: 800;
+        color: #EE9972;
+    }
+
+    h3 {
+        color: white;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
+
+.special-content {
+    position: relative;
+    top: -5px;
+    background-color: #606060;
+
+    .description {
+        padding: 1rem;
+        color: white;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        color: white;
+        text-decoration: underline;
+    }
+}
