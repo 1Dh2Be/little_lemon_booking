@@ -91,30 +91,9 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  max-width: 500px;
+  max-width: 400px;
   white-space: normal;
   word-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
-}
-@media (max-width: 1024px) {
-  .hero-content p {
-    font-size: 1.3rem;
-    max-width: 450px;
-  }
-}
-@media (max-width: 768px) {
-  .hero-content p {
-    font-size: 1.2rem;
-    max-width: 100%;
-    line-height: 1.4;
-  }
-}
-@media (max-width: 480px) {
-  .hero-content p {
-    font-size: 1rem;
-    line-height: 1.3;
-  }
 }
 .hero-image img {
   position: relative;

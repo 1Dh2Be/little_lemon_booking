@@ -7,24 +7,35 @@
   gap: 2rem;
   justify-content: center;
 }
+.about-section .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .about-section .text-content h1 {
   padding: 1rem 0;
+  font-size: 2.5rem;
 }
 .about-section .text-content p {
   max-width: 375px;
   min-height: 253px;
   font-weight: 500;
+  font-size: 18px;
+  text-align: center;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 250px;
+  margin: 7rem 0;
+}
+.image-container .img1 {
+  min-width: 120px;
 }
 .image-container .img2 {
   position: relative;
   top: -130px;
   left: -40px;
-  max-width: 200px;
+  min-width: 120px;
 }/*# sourceMappingURL=About.css.map */

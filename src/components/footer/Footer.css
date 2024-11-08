@@ -1,34 +1,89 @@
-.site-footer {
-  background-color: #333333;
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  font-size: 14px;
 }
-
-.footer-content {
-  max-width: 70%;
+.footer .container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .footer-sections {
   display: flex;
-  gap: 6rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-
-.footer-branding {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5rem;
+.footer .footer-section {
+  flex: 1;
+  margin-right: 30px;
 }
-
-.footer-links {
-  margin: 2rem 0;
+.footer .footer-section:last-child {
+  margin-right: 0;
 }
-.footer-links h2 {
-  color: #495E57;
+.footer .footer-section h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
 }
-
-li {
+.footer .footer-section ul {
   list-style: none;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
 }
-
-a {
-  color: white;
+.footer .footer-section ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.footer .footer-section ul a {
+  color: #333;
   text-decoration: none;
+}
+.footer .footer-section ul a:hover {
+  text-decoration: underline;
+  color: #FBDABB;
+}
+.footer .footer-section p {
+  margin-bottom: 10px;
+}
+.footer .footer-section .social-icons {
+  display: flex;
+  gap: 20px;
+}
+.footer .footer-section .social-icons li {
+  margin-right: 0;
+}
+.footer .footer-section .social-icons li a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.5s ease;
+}
+.footer .footer-section .social-icons li a:hover {
+  color: #FBDABB;
+}
+.footer .footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-bottom .logo {
+  display: flex;
+  max-width: 160px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-sections {
+    flex-direction: column;
+  }
+  .footer .footer-section {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=Footer.css.map */

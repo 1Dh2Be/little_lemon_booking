@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Nav.css';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +17,12 @@ const Nav = () => {
                 <div className={`burger-bar ${isMenuOpen ? 'open' : ''}`}></div>
             </div>
             <ul className={`nav-list ${isMenuOpen ? 'open' : ''}`}>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="/reservation">Reservation</a></li>
-                <li><a href="/order">Order online</a></li>
-                <li><a href="/login">Login</a></li>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="about">About</NavLink>
+                <NavLink to="menu">Menu</NavLink>
+                <NavLink to="/">Reservation</NavLink>
+                <NavLink to="/">Order online</NavLink>
+                <NavLink to="/">Login</NavLink>
             </ul>
         </nav>
     );

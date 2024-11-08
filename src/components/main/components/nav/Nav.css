@@ -63,7 +63,7 @@
   transition: color 0.3s ease;
 }
 .nav-list a:hover {
-  color: #495E57;
+  color: #FBDABB;
 }
 @media (max-width: 768px) {
   .nav-list a {

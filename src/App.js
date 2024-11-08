@@ -1,16 +1,32 @@
 import './App.css';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Main from './components/main/Main';
+
+import {
+  RouterProvider,
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements
+ } from 'react-router-dom';
+
+// Layouts
+import RootLayout from './layouts/RootLayout';
+import Home from './pages/Home';
+import About from './pages/about-page/AboutPage';
+import Menu from './pages/menu/Menu';
+
+ const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout/>}>
+      <Route index element={<Home/>}/>
+      <Route path='about' element={<About />}/>
+      <Route path='menu' element={<Menu />}/>
+    </Route>
+  )
+ )
 
 function App() {
   return (
     <>
-      <Header />
-
-      <Main />
-
-      <Footer />
+      <RouterProvider router={router} />
     </>
   );
 }

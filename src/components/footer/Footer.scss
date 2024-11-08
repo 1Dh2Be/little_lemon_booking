@@ -1,37 +1,110 @@
-$color-accent: #495E57;
+$accent-color: #FBDABB;
 
-.site-footer {
-    background-color: #333333;
-}
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-size: 14px;
 
-.footer-content {
-    max-width: 70%;
-    margin: 0 auto;
-    display: flex;
-    gap: 6rem;
-}
-
-.footer-branding {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5rem;
-}
-
-.footer-links {
-    margin: 2rem 0;
-
-    h2 {
-        color: $color-accent;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-}
 
-li {
-    list-style: none;
-    margin: 10px 0;
-}
+    .footer-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
 
-a {
-    color: white;
-    text-decoration: none;
-}
+    .footer-section {
+      flex: 1;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+
+        a {
+          color: #333;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: $accent-color;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 20px;
+
+        li {
+          margin-right: 0;
+
+          a {
+            color: #333;
+            font-size: 20px;
+            transition: color 0.5s ease ;
+
+            &:hover {
+                color: $accent-color;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        max-width: 160px;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-sections {
+        flex-direction: column;
+      }
+
+      .footer-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
