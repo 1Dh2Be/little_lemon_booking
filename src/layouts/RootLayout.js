@@ -10,7 +10,9 @@ export default function RootLayout() {
         <main>
             <Outlet />
         </main>
-        <Footer />
+        <div className="footer-section">
+          <Footer />
+        </div>
     </div>
   )
 }

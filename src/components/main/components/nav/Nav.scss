@@ -47,7 +47,7 @@ $accent-color: #FBDABB;
             display: none;
             flex-direction: column;
             position: absolute;
-            top: 100%; // Position below header
+            top: 100%;
             right: 0;
             background-color: white;
             padding: 20px;
@@ -55,6 +55,7 @@ $accent-color: #FBDABB;
             border-radius: 4px;
             width: 200px;
             gap: 1rem;
+            z-index: 1001;
 
             &.open {
                 display: flex;

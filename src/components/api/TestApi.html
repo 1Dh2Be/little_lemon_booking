@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h2>Check console for results</h2>
+    <script type="module">
+        import { fetchAPI, submitAPI } from './BookingApi.js';
+
+        function testReservationAPI() {
+            console.log("Testing Reservation API\n");
+
+            // Test 1: Check different dates
+            console.log("Test 1: Checking available slots for different dates");
+            
+            const testDates = [
+                new Date('2024-01-15'),
+                new Date('2024-01-20'),
+                new Date('2024-01-25')
+            ];
+
+            testDates.forEach(date => {
+                console.log(`\nDate: ${date.toDateString()}`);
+                const availableSlots = fetchAPI(date);
+                console.log("Available time slots:", availableSlots);
+                console.log("Number of available slots:", availableSlots.length);
+            });
+
+            // Test 2: Submit reservation
+            console.log("\nTest 2: Testing reservation submission");
+
+            const mockFormData = {
+                date: new Date('2024-01-15'),
+                time: "18:00",
+                guests: 2,
+                occasion: "Birthday",
+                name: "John Doe",
+                email: "john@example.com"
+            };
+
+            const isSubmissionSuccessful = submitAPI(mockFormData);
+            console.log("Submission successful:", isSubmissionSuccessful);
+        }
+
+        // Run the test
+        testReservationAPI();
+    </script>
+</body>
+</html>

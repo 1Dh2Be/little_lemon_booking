@@ -11,7 +11,8 @@ import {
 import RootLayout from './layouts/RootLayout';
 import Home from './pages/Home';
 import About from './pages/about-page/AboutPage';
-import Menu from './pages/menu/Menu';
+import Menu from './pages/menu-page/Menu';
+import BookingPage from './pages/booking-page/BookingPage';
 
  const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ import Menu from './pages/menu/Menu';
       <Route index element={<Home/>}/>
       <Route path='about' element={<About />}/>
       <Route path='menu' element={<Menu />}/>
+      <Route path='reservation' element={<BookingPage/>}/>
     </Route>
   )
  )

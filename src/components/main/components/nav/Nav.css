@@ -50,6 +50,7 @@
     border-radius: 4px;
     width: 200px;
     gap: 1rem;
+    z-index: 1001;
   }
   .nav-list.open {
     display: flex;
