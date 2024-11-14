@@ -128,7 +128,7 @@
   margin: 0;
 }
 
-button {
+.submit-btn {
   width: 100%;
   max-width: 300px;
   font-size: 18px;
@@ -144,11 +144,11 @@ button {
   display: flex;
   justify-content: center;
 }
-button:hover {
+.submit-btn:hover {
   background-color: #e4bf0b;
   transform: translateY(-1px);
 }
-button:active {
+.submit-btn:active {
   transform: translateY(0);
 }
 

@@ -177,6 +177,7 @@ export default function BookingForm() {
                             </div>
 
                             <button
+                                className="submit-btn"
                                 type="submit"
                                 aria-label="Submit reservation form"
                             >
